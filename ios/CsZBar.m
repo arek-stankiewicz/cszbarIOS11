@@ -38,17 +38,10 @@
 - (void)scan: (CDVInvokedUrlCommand*)command; 
 {
     if (self.scanInProgress) {
-	    /*
-        [self.commandDelegate
-         sendPluginResult: [CDVPluginResult
-                            resultWithStatus: CDVCommandStatus_ERROR
-                            messageAsString:@"A scan is already in progress."]
-         callbackId: [command callbackId]];
-	*/
 	    [self.scanReader dismissViewControllerAnimated: YES completion: ^(void) {
 		self.scanInProgress = NO;
 		[self sendScanResult: [CDVPluginResult
-				       resultWithStatus: CDVCommandStatus_OK
+				       resultWithStatus: CDVCommandStatus_ERROR
 				       messageAsString:@"Previous scan cancelled, select to scan again."]];
 	    }];
     } else {
