@@ -1,4 +1,4 @@
-This repo was created from a tagged version of the Outsystems version located here, https://github.com/OutSystems/csZBar.git#v1.3.3-OS11
+This repo was created from a tagged Outsystems version located here, https://github.com/OutSystems/csZBar.git#v1.3.3-OS11
 
 
 **This repository is looking for a maintainer! If you believe you are the right person, please [leave a comment](https://github.com/tjwoon/csZBar/issues/60)!**
